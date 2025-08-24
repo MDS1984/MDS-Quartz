@@ -7,6 +7,7 @@ aliases:
 Beschreibung: Dein Körper ist ein Gefäß, durch das du deine Disziplin in Anmut, Präzision und die niemals endende Reise zur Vollkommenheit leitest.
 ---
 **Synonyme** Kampfkünstler, Mystiker, Wanderer
+
 *Dein Körper ist ein Gefäß, durch das du deine Disziplin in Anmut, Präzision und die niemals endende Reise zur Vollkommenheit leitest.*
 # Pfadtalent
 ![[Disziplin]]
