@@ -1,0 +1,17 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "Talente"
+        - file.path != "Talente/Talente.base"
+    order:
+      - Klasse
+      - Pfadtalent
+      - file.name
+      - Englisch
+    sort:
+      - property: Pfadtalent
+        direction: ASC
+    columnSize:
+      file.name: 319
