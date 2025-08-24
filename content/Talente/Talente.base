@@ -7,11 +7,11 @@ views:
         - file.path != "Talente/Talente.base"
     order:
       - Klasse
-      - Pfadtalent
       - file.name
+      - Pfadtalent
       - Englisch
     sort:
-      - property: Pfadtalent
+      - property: Klasse
         direction: ASC
     columnSize:
-      file.name: 319
+      note.Pfadtalent: 319
