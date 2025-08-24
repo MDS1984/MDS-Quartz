@@ -13,5 +13,7 @@ views:
     sort:
       - property: Klasse
         direction: ASC
+      - property: Pfadtalent
+        direction: ASC
     columnSize:
       note.Pfadtalent: 319

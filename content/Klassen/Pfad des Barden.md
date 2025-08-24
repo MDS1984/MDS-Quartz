@@ -54,7 +54,7 @@ Dein Instrument – oder deine Instrumente – sind ein wesentlicher Bestandteil
 | Mandoline        | Oboe           | Becken           | Zink                 | Geschichtenerzählen |
 | Fidel/Geige      | Panflöte       | Bongos           | Signalhorn           | Tanzen         |
 
-# Bardentalente
+# Talente
 ![[Bardenwissen]]
 ![[Dynamischer Auftritt]]
 ![[Gespaltene Zunge]]

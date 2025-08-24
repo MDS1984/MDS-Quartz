@@ -54,7 +54,7 @@ Dein Stil verwendet häufig oder gelegentlich folgende Waffengattungen ... mit W
 | Nunchaku          | Gewicht & Kette | Hakenschwert          | Langklingenwaffe | Bumerang     | Eisenknöchel          |
 | Kurzstöcke        | Peitschenklinge | Gerades Schwert       | Dreizack         | Pfeile/Darts | Halbmondmesser        |
 | Schlagstöcke      | Kampfschal      | Krummschwert          | Sense            | Wurfaxt      | Rückfaustringe        |
-# Mönchstalente
+# Talente
 ![[Tiefe Konzentration]]
 ![[Heilende Hände]]
 ![[Blitzschnelle Reflexe]]
