@@ -8,7 +8,7 @@ Beschreibung: Du erzählst Geschichten und Lieder, die Gefühle wecken, Tapferke
 ---
 **Synonyme** Taktiker, Stratege, Anführer
 
-*Strategien und Schlachtpläne erarbeiten und das Befehligen von Truppen sind dein ....*
+*Strategien und Schlachtpläne erarbeiten und das Befehligen von Truppen liegen dir im Blut, deine reine Anwesenheit und schiere Präsenz führt andere zu Höchstleistungen.*
 # Pfadtalent
 ![[Strategie]]
 # Talente

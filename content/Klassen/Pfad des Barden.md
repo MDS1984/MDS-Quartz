@@ -42,7 +42,7 @@ Wähle oder würfle:
 - **Chaotischer Choral des Spottes**: Der stolze König stolpert, beschämt, während die Menge unkontrolliert lacht.
 - **Mitreißende Rhapsodie der Zuneigung**: Der wütende Schattenwolf hält inne und stupst jemanden in der Nähe an, den Schwanz wedelnd.
 - **Sanfte Hymne der Ruhe**: Die Hydra senkt ihre Köpfe, einer nach dem anderen, und gleitet in friedlichen Schlummer.
-- **Boshafter Liedchen der Wut**: Eine Taverne versinkt in blinder Zerstörungswut, die Gäste verzehrt von animalischem Zorn.
+- **Boshaftes Liedchen der Wut**: Eine Taverne versinkt in blinder Zerstörungswut, die Gäste verzehrt von animalischem Zorn.
 # Bardeninstrumente
 Dein Instrument – oder deine Instrumente – sind ein wesentlicher Bestandteil dessen, was dich als Barden ausmacht. Verflicht sie, wann immer möglich, in deine Szenen. Versuche, ein Instrument zu wählen, das sowohl zur Persönlichkeit deines Spielercharakters passt als auch in vielen verschiedenen Szenen einsetzbar ist.
 

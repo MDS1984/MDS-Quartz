@@ -1,0 +1,11 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "Klassen"
+        - file.path != "Klassen/Klassen.base"
+    order:
+      - file.name
+      - Beschreibung
+    sort: []
