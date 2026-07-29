@@ -1,0 +1,91 @@
+{
+  "size": {
+    "w": 2700,
+    "h": 3535
+  },
+  "layers": [
+    {
+      "id": "default",
+      "name": "Gefahrenzonen",
+      "visible": false,
+      "locked": false,
+      "boundBase": "z_Assets/Karte_Qadira_blanko.webp"
+    }
+  ],
+  "markers": [
+    {
+      "type": "pin",
+      "id": "marker_0huukk",
+      "x": 0.3988232086175849,
+      "y": 0.1527054305227978,
+      "layer": "default",
+      "link": "Katheer",
+      "iconKey": "pinRed",
+      "tooltip": "Katheer",
+      "tooltipAlwaysOn": true,
+      "tooltipLabelAlways": true,
+      "tooltipLabelPosition": "below"
+    }
+  ],
+  "bases": [
+    {
+      "path": "z_Assets/Karte_Qadira.webp",
+      "name": "Qadira"
+    },
+    {
+      "path": "z_Assets/Karte_Qadira_blanko.webp",
+      "name": "Qadira ohne Marker"
+    }
+  ],
+  "overlays": [],
+  "activeBase": "z_Assets/Karte_Qadira.webp",
+  "measurement": {
+    "scales": {
+      "z_Assets/Karte_Qadira.webp": 1204.2478859807297
+    },
+    "customUnitPxPerUnit": {},
+    "travelTimePresetIds": [
+      "tt-pupf57"
+    ],
+    "travelDaysEnabled": true,
+    "displayUnit": "km",
+    "metersPerPixel": 1204.2478859807297,
+    "travelDayPresetId": "tpd-2nikkk"
+  },
+  "pinSizeOverrides": {},
+  "grids": [],
+  "panClamp": true,
+  "drawLayers": [],
+  "drawings": [],
+  "secondScreen": {
+    "showGrids": true
+  },
+  "textLayers": [],
+  "deleted": [
+    {
+      "id": "undo_zg9u7w",
+      "label": "Delete marker",
+      "createdAt": "2026-07-13T21:20:54.460Z",
+      "payload": {
+        "kind": "marker",
+        "marker": {
+          "id": "marker_loxt7v",
+          "x": 0.5897702724076027,
+          "y": 0.37967873662332363,
+          "layer": "default",
+          "link": "",
+          "iconKey": "pinRed",
+          "tooltip": "",
+          "anchorSpace": "viewport",
+          "hudX": 376.6666259765625,
+          "hudY": 181.73956298828125,
+          "hudModeX": "right",
+          "hudModeY": "top",
+          "hudLastWidth": 638.6666870117188,
+          "hudLastHeight": 478.66668701171875
+        },
+        "index": 1
+      }
+    }
+  ]
+}

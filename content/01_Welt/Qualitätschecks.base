@@ -1,0 +1,55 @@
+formulas:
+  "#Fischen": Fischen.length
+  "#Jagen": Jagen.length
+  "#Materialien": Materialien.length
+  "#Kräuter": Kräuter.length
+  Summe: formula["#Fischen"]+formula["#Jagen"]+formula["#Kräuter"]+formula["#Materialien"]
+views:
+  - type: table
+    name: Komponenten Anz
+    filters:
+      and:
+        - file.inFolder("01_Welt/01_Biome")
+        - type == "biom"
+    order:
+      - file.name
+      - formula.#Fischen
+      - formula.#Jagen
+      - formula.#Materialien
+      - formula.#Kräuter
+      - begehbarkeit
+      - formula.Summe
+    sort:
+      - property: formula.Summe
+        direction: ASC
+      - property: begehbarkeit
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      formula.Summe: 193
+  - type: table
+    name: Komponente ohne Biom
+    filters:
+      and:
+        - file.inFolder("01_Welt/02_Komponenten")
+        - biome.isEmpty()
+        - type == "komponente"
+  - type: table
+    name: Komponenten Übersicht
+    filters:
+      and:
+        - file.inFolder("01_Welt/02_Komponenten")
+        - type == "komponente"
+    order:
+      - file.name
+      - biome
+      - merkmale
+    sort:
+      - property: biome
+        direction: ASC
+    markers: number
+    indentProperties: true
+    columnSize:
+      file.name: 256
+      note.biome: 489

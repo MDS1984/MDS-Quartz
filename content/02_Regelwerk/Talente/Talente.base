@@ -1,0 +1,24 @@
+properties:
+  file.name:
+    displayName: Talent
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "02_Regelwerk/Talente"
+        - file.path != "02_Regelwerk/Talente/Talente.base"
+    order:
+      - Klasse
+      - file.name
+      - kategorie
+      - Englisch
+    sort:
+      - property: Klasse
+        direction: ASC
+      - property: file.name
+        direction: DESC
+      - property: Pfadtalent
+        direction: DESC
+    columnSize:
+      note.Pfadtalent: 319

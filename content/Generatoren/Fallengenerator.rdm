@@ -1,0 +1,213 @@
+// Fallengenerator.rdm
+// =================================================================
+ // Der Fallengenerator würfelt eine zufällige Kombination aus Komponente, Auslöser, Effekt, 
+ // Hinweis, Köder, Exklusion und Rücksetzer =================================================================
+
+Table: Falle
+<table style="width:100%;table-layout:fixed;"><th style="width:20%;text-align:left;vertical-align:top;">Bestandteil</th><th style="width:30%;text-align:left;vertical-align:top;">Beschreibung</th><th style="width:50%;text-align:left;vertical-align:top;">Ergebnis</th></tr></thead><tbody><tr><td>Komponente</td><td>Woraus die Falle besteht oder welche Technologie bzw. Magie sie nutzt.</td><td>[@Komponente]</td></tr>    <tr><td>Auslöser</td><td>Was die Falle aktiviert.</td><td>[@Auslöser]</td></tr><tr><td>Wirkung</td><td>Welchen Effekt die Falle nach der Aktivierung entfaltet.</td><td>[@Wirkung]</td></tr><tr><td>Hinweise</td><td>Spuren oder Warnzeichen, die auf die Falle hindeuten.</td><td>[@Hinweise]</td></tr><tr><td>Köder</td><td>Was Abenteurer dazu verleitet, die Falle auszulösen.</td><td>[@Köder]</td></tr><tr><td>Umgehung</td><td>Wie Eingeweihte oder aufmerksame Personen die Falle sicher passieren.</td><td>[@Umgehung]</td></tr><tr><td>Rücksetzung</td><td>Wie die Falle wieder scharf gestellt oder erneut aktiviert wird.</td><td>[@Rücksetzer]</td></tr></tbody></table>
+
+
+// Bauteile / Art der Falle – W66 (2W6, erster Wurf = Zehnerstelle, zweiter Wurf = Einerstelle)
+Table: Komponente
+Mechanische Druckplatten im verzierten Boden
+Versteckte Fallgrube oder Schacht
+Schwenk- oder Drehtür / Schwenkwand
+Fallgitter / schwere Gittertür
+Pendel- oder Schaukelklinge
+Wandschlitze mit Speer-/Pfeilmechanismus
+Herabstürzende Deckenplatten / Decke auf Gegengewicht
+Kippender Boden oder schmale Kippbrücke
+Rollender Block / Fels / schwerer Wagen
+Netz-/Fangmechanismus aus Seil oder Kette
+Mosaikboden mit verborgenen Mechanismen
+Versteckte Mechanik in Statuen / Säulen
+Sandrutschen / Sand aus Hohlräumen in der Wand
+Trügerischer Sandboden / Quicksand-ähnliche Stelle
+Staubexplosion (Staubwolke plus Funke/Flamme)
+Stachel- oder Dornfelder am Boden / an Wänden
+Hängende Stoffbahnen, Gebetsfahnen oder Vorhänge
+Wasseruhren, Zahnräder und astrolabische Mechanismen
+Wasserreservoirs, Zisternen, Kanäle
+Heißwasser- / Dampfleitungen aus Bädern und Hammams
+Giftige oder ätzende Flüssigkeit in Amphoren / Becken
+Ölreservoirs, Lampenölleitungen, Brennstoffkanäle
+Rauch- oder Nebelkörper (Sichtbehinderung, Ersticken)
+Duftlampen, Weihrauchbrenner, Parfümfontänen
+Magische Glyphen / Runen in Kalligrafie und Mosaiken
+Versiegelte Schriftrollen, Siegelmagie, Vertragsmagie
+Gebundener Elementar / Dschinn in Gefäß, Lampe oder Ring
+Verfluchte / animierte Statue oder Relief
+Illusionäre Wände, Böden, Gegenstände
+Magischer Spiegel, Linse oder Prisma (Licht/Sichtfalle)
+Schlangen, Skorpione oder andere Wüstenkreaturen als „Munition“
+Schwärme (Insekten, Ratten, Fledermäuse)
+Untote Wächter (Knochen, Mumienreste, Geistererscheinungen)
+Konstrukte (Sandgolem, Wächterautomat, animierte Rüstung)
+Musikinstrumente, Flöten, Klangkörper als Auslöser/Komponente
+Exotische Stoffe, Teppiche, Vorhänge als aktive Falle (umschlingend, erstickend, verdeckend)
+
+// Auslöser der Falle – W66 (2W6, erster Wurf = Zehnerstelle, zweiter Wurf = Einerstelle)
+Table: Auslöser
+Tritt auf auffällige Mosaikfliese / Ornamentplatte
+Tritt auf unscheinbare Fliese / Stufe
+Überschreiten einer sichtbaren oder leicht markierten Linie auf dem Boden
+Stolpern über gespannte Schnur / Draht
+Berühren einer Statue, eines Idols oder prunkvollen Objekts
+Ziehen eines offensichtlichen Hebels / Griffs
+Öffnen einer normalen Tür
+Öffnen einer besonders prunkvollen Tür oder Truhe
+Öffnen eines Geheimfachs / Wandnische / Bodenschubsers
+Wegnehmen eines Gegenstands (Schatz, Opfergabe, Idolfigur)
+Verschieben von Möbeln, Teppich, Paravent
+Hinsetzen/Hinlegen auf Polster, Bett, Ruheliege
+Betreten eines markierten Bereichs (z. B. innerhalb eines Säulenrings)
+Betreten eines Beckens / Brunnens / Wasserfläche
+Durchqueren eines Rauch- / Weihrauchschleiers
+Unterbrechen eines Licht- oder Spiegelstrahls
+Plötzlicher hoher Lärm (Schrei, Kampf, zerbrechendes Glas)
+Starke Erschütterung (Rennen, Springen, Sprengung)
+Zeitverzögerung – Falle löst einige Herzschläge nach Betreten aus
+Auslösung ab bestimmter Gesamtlast (z. B. zweite Person)
+Auslösung, wenn jemand allein den Bereich betritt
+Wirken von Magie im Raum (irgendein Zauber)
+Wirken einer bestimmten Art Magie (Feuer, Heilung, Illusion etc.)
+Aussprechen bestimmter Worte/Begriffe (Fluch, Titel, Name)
+Nutzung der „falschen“ Sprache (nicht Hof-, Kult- oder Codesprache)
+Manipulation eines Schlosses (Aufbrechen, Knacken, magisch Öffnen)
+Betreten durch einen verbotenen Eingang oder heiligen Zugang
+Manueller Auslöser durch Wache, Diener oder Wächtergeist
+Gekoppelter Trigger – Auslösung einer anderen Falle triggert diese Falle
+Fern-Trigger – ausgelöst von einem versteckten Kontrollpunkt aus
+Entzünden oder Löschen einer heiligen Flamme
+Öffnen oder Schließen eines Vorhangs, einer Jalousie oder eines Gitters
+Anheben eines Teppichs, Brettes oder Bodenpaneels
+Erkennen von Körperwärme / Lebensenergie (magischer Sensor)
+Überschreiten einer unsichtbaren magischen Markierung / Aura
+Komplexer Auslöser – zwei andere Trigger müssen beide passieren, um auszulösen
+  
+// Wirkung der Falle (Effekt / Payload) – W66 (2W6, erster Wurf = Zehnerstelle, zweiter Wurf = Einerstelle)
+Table: Wirkung
+Leichter Schlag (z. B. Pendel, Schlagbalken) – kleiner körperlicher Schaden
+Leichter Stich oder Pfeil – oberflächliche Wunden, mehr Schreck als Gefahr
+Flacher Sturz aus geringer Höhe – Prellungen, eventuell kurz benommen
+Stolper-/Falleffekt – peinlicher Sturz, moderater Schaden, Positionsverlust
+Kleiner Steinschlag – einige Brocken, überschaubarer Schaden
+Schwaches Gift – Übelkeit, Zittern, leichte Mali, selten tödlich
+Kräftige Stachelfalle – ernsthafter Stichschaden, Blutverlust
+Tiefe Fallgrube (ggf. mit Stacheln) – hoher Schaden, schwieriger Ausstieg
+Rollender Block oder Fels – massiver Schaden, kann Opfer niederwalzen
+Schwere Klinge/Guillotine – hoher Schaden, Gliedmaßen in Gefahr
+Einsturz eines Bereichs der Decke – Möglichkeit, verschüttet oder eingeschlossen zu werden
+Quetschender Fallgitter- oder Türmechanismus – hoher Schaden, Einklemmen
+Flammenstoß aus Wand oder Boden – kurzer, heftiger Feuerangriff
+Brennende Lache / entzündetes Öl – anhaltende Brandgefahr im Bereich
+Heißer Dampf – kombinierter Feuer-/Erstickungseffekt, Sicht stark eingeschränkt
+Explosiver Brand (feuerballartig) – starke Hitze, Druckwelle
+Hitzeofen – Raum wird schnell unerträglich heiß, schleichender Schaden
+Unerträgliche Hitze oder Sonnenfeuer – Hitzeschäden, Erschöpfung, eingeschränk
+Raum wird überflutet oder in ein Wasserbecken verwandelt
+Starke Flut – Ertrinkungsgefahr, Wegschwemmen, Gruppentrennung möglich
+Raum füllt sich mit Sand – langsames Begraben, erschwerte Aktionen
+Tückischer Sand/Quicksand an einem Punkt – einsinken, feststecken
+Schlaf-/Narkosegas – einschläfernd, bewusstlos machend
+Gift-/Erstickungsgas – schleichender Schaden, Husten, Panik
+Benommenheit/Betäubung durch Schlag, Klang oder Erschütterung
+Blindheit oder Taubheit durch grelles Licht oder ohrenbetäubenden Klang
+Verwirrung/Furcht durch Flüstern, Visionen oder Albtraumillusionen
+Opfer wird in Sand oder Salz verkrustet – Bewegungen werden zunehmend erschwert
+Gebunden oder bewegungsunfähig (Netz, Teppich, Ketten, magische Fesseln)
+Verflucht oder gezeichnet (sozialer oder magischer Nachteil, bis der Fluch gebrochen ist)
+Lauter Alarm ruft Wachen, Kultisten oder andere Bewaffnete herbei
+Leiser, magischer Alarm signalisiert aus der Ferne, ohne direkten Lärm
+Freisetzen von Kreaturen (Schlangen, Skorpione, Ratten, Insekten)
+Aktivierung eines Wächterkonstrukts oder Elementars
+Raumgeometrie verändert sich (Drehwände, verschobene Türen, Labyrinth-Effekt)
+One-Way-Transport oder Isolation (Rutsche, Teleport, Schacht; Rückweg schwer oder gefährlich)
+
+  
+// Hinweise auf die Falle (Clues / Telegraph) – W66 (2W6, erster Wurf = Zehnerstelle, zweiter Wurf = Einerstelle)
+Table: Hinweise
+Frische oder alte Blutspuren an Boden oder Wand
+Stecken gebliebene Pfeile, Bolzen oder Klingen in Holz oder Stein
+Kratzspuren, Schrammen, Schleifspuren auf Böden oder an Türen
+Ungewöhnlich abgenutzte Fliese oder Stufe im Vergleich zur Umgebung
+Sichtbare Mechanikteile (Zahnräder, Federn, Seile) in einer Nische
+Kleine Bohrlöcher oder Schlitze in Wänden, Boden oder Decke
+Ruß- und Brandspuren an Decke, Wänden oder Lampen
+Versengte Teppichkanten, angekokelte Stoffe
+Wasserlinien, Algen oder Schimmel an unteren Wandbereichen
+Rostige, feuchte Metallteile, tropfendes Wasser
+Kleine Sandhäufchen in Ecken, feiner Sand auf höher gelegenen Flächen
+Verschobener Teppich oder verrutschtes Mosaik
+Mumifizierte Tiere oder vertrocknete Kadaver
+Knochen, alte Leichenreste, halb vergrabene Skelette
+Eingetrocknete Blutflecken, alte Kampfspuren
+Zerbrochene Ausrüstung (Schild, Helm, Werkzeug)
+Eingekerbte Warnsymbole (X, Pfeile, Totenkopf)
+Kritzeleien oder Schrift an der Wand, die vor Gefahr warnt
+Merkwürdige Gerüche (süßlich, chemisch, nach Ozon oder Verwesung)
+Leises Ticken, Schaben, Zischen oder Rauschen hinter Wänden
+Spürbarer Luftzug oder Temperaturwechsel an bestimmter Stelle
+Asymmetrische Dekoration – ein Mosaikstein oder Muster, das nicht passt
+Verfärbungen oder Flecken am Boden in klar abgegrenzten Bereichen
+Staubfreie Streifen oder Flächen in einem sonst staubigen Raum
+Tiere meiden einen Bereich oder werden plötzlich unruhig
+Kleine Risse in Wänden oder Decke, lose Steine, die „zu locker“ wirken
+Boden oder Wand wirken nachträglich geflickt oder neu verputzt
+Decke sichtbar mit Streben, Ketten oder Balken abgestützt
+Schimmernde kalligrafische Schriftzeichen
+Feines Summen oder Vibrationen im Boden, wenn man still steht
+Stelle wirkt „zu perfekt“ – frisch geputzt, poliert, ohne Staub
+Stelle wirkt „zu verfallen“ – Risse, Brösel, Instabilität nur dort
+Unpassende Gegenstände (Teppich, Brett, Kiste) an seltsamem Ort
+Möbel mit Kratzspuren darunter, als würden sie oft verschoben
+Spuren von Vorgängern – Kreidemarkierungen, Seile, abgebrochene Stangen
+Deutliche Spuren von Reparatur oder Wartung (frisches Holz, neue Schrauben, Putz)
+  
+// Köder, der Figuren an die Falle lockt – 2W6 (Summe der beiden W6)
+Table: Köder
+Type: Lookup
+Roll: 2d6
+2: Übertrieben offensichtlicher Schatz
+3: Verwundetes oder gefesseltes Wesen
+4: Wasser, Schatten, Abkühlung
+5: Schattiger Rastplatz oder Brunnen
+6: Aussichtspunkt oder sicher wirkender Beobachtungsplatz
+7: Der klare Weg weiter
+8: Magisch oder exotisch wirkender Gegenstand
+9: Geheimgang oder „Abkürzung“
+10: Religiöse oder heilige Artefakte
+11: Bücher, Karten, Dokumente, Wissen
+12: Kein offensichtlicher Köder – der gesicherte Durchgang selbst
+
+// Ausnahmeweg / Umgehung für Eingeweihte – 2W6 (Summe der beiden W6)
+Table: Umgehung
+Type: Lookup
+Roll: 2d6
+2: Kein Bypass – Falle trifft grundsätzlich jeden
+3: Spezielle Route / sichere Fliesen
+4: Geheimgang / alternative Route
+5: Schlüssel, Siegel oder Insigne
+6: Losung, Gebet oder Formel
+7: Hebel, Schalter oder versteckter Mechanismus
+8: Opfergabe (Münzen, Wasser, Rauch, Blut, Gebet)
+9: Abstammung oder Blutlinie
+10: Timing / Tageszeit
+11: Rätsel oder Logikaufgabe
+12: Doppel-Bypass / komplexe Ausnahme (zwei Bedingungen nötig)
+
+// Rücksetzung / wie die Falle wieder scharf wird – 2W6 (Summe der beiden W6)
+Table: Rücksetzer
+Type: Lookup
+Roll: 2d6
+2: Einmalig, danach zerstört oder dauerhaft ausgelöst
+3: Kein Reset, aber dauerhafte Umweltgefahr
+4: Manueller Reset von innen
+5: Manueller Reset von außen oder über versteckten Wartungszugang
+6: Automatischer Kurz-Reset (Minuten bis etwa eine Szene)
+7: Automatischer Lang-Reset (Stunden bis ein Tag)
+8: Magischer Reset bei Sonnenaufgang, Sonnenuntergang oder bestimmtem Sternenstand
+9: Magischer Ritual- oder Opfer-Reset
+10: Nutzung schwächt die Falle (sie wird mit jeder Auslösung harmloser)
+11: Nutzung verstärkt die Falle (Eskalation – jede Auslösung macht sie gefährlicher)
+12: Komplexer oder zufälliger Reset (z. B. nur bei bestimmter Bedingung oder mit Zufallschance)

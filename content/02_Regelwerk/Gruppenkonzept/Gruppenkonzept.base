@@ -1,0 +1,12 @@
+views:
+  - type: cards
+    name: Karten
+    filters:
+      and:
+        - "!Gruppenname.isEmpty()"
+    order:
+      - Gruppenname
+    image: note.image
+    imageFit: contain
+    cardSize: 200
+    imageAspectRatio: 1

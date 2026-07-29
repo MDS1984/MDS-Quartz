@@ -1,0 +1,24 @@
+{
+  "mapId": "map_61yrar",
+  "markers": [],
+  "layers": [
+    {
+      "id": "default",
+      "name": "Default Layer",
+      "zoomMin": null,
+      "zoomMax": null
+    },
+    {
+      "id": "layer_1781380274911_lqndz4",
+      "name": "Region",
+      "zoomMin": null,
+      "zoomMax": null
+    }
+  ],
+  "distanceScale": null,
+  "lastImagePath": "z_Assets/Karte_Qadira.webp",
+  "lastSourcePath": "01_Welt/Weltkarte.md",
+  "savedZoom": 110,
+  "savedPanX": -39.60000000000002,
+  "savedPanY": -31.696874999999977
+}

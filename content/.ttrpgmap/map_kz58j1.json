@@ -1,0 +1,33 @@
+{
+  "mapId": "map_kz58j1",
+  "markers": [],
+  "layers": [
+    {
+      "id": "default",
+      "name": "Default Layer",
+      "zoomMin": null,
+      "zoomMax": null
+    }
+  ],
+  "distanceScale": {
+    "pointA": {
+      "x": 1248.015552947036,
+      "y": 2898.855094881844
+    },
+    "pointB": {
+      "x": 1250.5943495086408,
+      "y": 3067.7409446265556
+    },
+    "units": 55,
+    "unitLabel": "kilometers",
+    "unitSystem": "metric",
+    "unit": "km"
+  },
+  "lastImagePath": "z_Assets/Karte_Qadira_blanko.webp",
+  "lastSourcePath": "01_Welt/Weltkarte.md",
+  "savedZoom": 100,
+  "savedPanX": 0.721278721278793,
+  "savedPanY": -12.175207604895078,
+  "zoomLocked": false,
+  "panLocked": false
+}

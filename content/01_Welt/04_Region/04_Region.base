@@ -1,0 +1,10 @@
+views:
+  - type: table
+    name: Tabelle
+    filters:
+      and:
+        - file.folder == "01_Welt/04_Region"
+        - file.ext != "base"
+    order:
+      - file.name
+      - biome

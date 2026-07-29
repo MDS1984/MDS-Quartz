@@ -1,0 +1,15 @@
+views:
+  - type: cards
+    name: Bestiary
+    filters:
+      and:
+        - type == "Kreatur"
+    order:
+      - file.name
+      - biome
+      - rolle
+      - rang
+      - aufgabenpool
+    image: note.bild
+    imageAspectRatio: 1
+    cardSize: 200
