@@ -6,8 +6,7 @@ views:
     name: Table
     filters:
       and:
-        - file.folder == "02_Regelwerk/Talente"
-        - file.path != "02_Regelwerk/Talente/Talente.base"
+        - "!Talentname.isEmpty()"
     order:
       - Klasse
       - file.name
