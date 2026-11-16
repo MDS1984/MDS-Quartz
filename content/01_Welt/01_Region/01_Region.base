@@ -1,0 +1,9 @@
+views:
+  - type: table
+    name: Tabelle
+    filters:
+      and:
+        - type == "region"
+    order:
+      - file.name
+      - biome

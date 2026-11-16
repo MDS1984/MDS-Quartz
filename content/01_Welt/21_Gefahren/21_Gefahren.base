@@ -1,0 +1,12 @@
+views:
+  - type: table
+    name: Tabelle
+    filters:
+      and:
+        - type == "Gefahr"
+    order:
+      - file.name
+      - biome
+    sort:
+      - property: biome
+        direction: ASC

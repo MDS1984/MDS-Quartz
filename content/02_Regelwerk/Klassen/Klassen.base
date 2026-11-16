@@ -1,0 +1,10 @@
+views:
+  - type: list
+    name: Table
+    filters:
+      and:
+        - type == "Pfad"
+    order:
+      - file.name
+      - Beschreibung
+    sort: []

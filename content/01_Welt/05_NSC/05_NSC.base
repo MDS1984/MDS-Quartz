@@ -1,0 +1,12 @@
+views:
+  - type: cards
+    name: Sicht
+    filters:
+      and:
+        - type == "NSC"
+    order:
+      - file.name
+      - beschreibung
+    image: note.banner_image
+    cardSize: 200
+    imageAspectRatio: 1.3

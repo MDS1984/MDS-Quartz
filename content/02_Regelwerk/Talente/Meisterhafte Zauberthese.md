@@ -1,0 +1,8 @@
+---
+Klasse: Magier
+Talentname: Meisterhafte Zauberthese
+Englisch: Mastered Theorem
+kategorie: Pfadtalent
+type: Talent
+---
+Wähle eine deiner **Zauberthesen**. Du erhältst +1W, wenn du sie wirkst, und gewinnst 1 zusätzlichen mächtigen Zauber mit dieser These pro Session. Dein Name wird mit ihr verknüpft, und sie beginnt, sich in der Zauberei zunehmender Beliebtheit zu erfreuen – verfolge ihre Verbreitung mit Kampagnen-Pools.

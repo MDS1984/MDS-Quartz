@@ -1,0 +1,11 @@
+views:
+  - type: cards
+    name: Sicht
+    filters:
+      and:
+        - type == "Ort"
+    order:
+      - file.name
+      - beschreibung
+    image: note.banner_image
+    cardSize: 300
