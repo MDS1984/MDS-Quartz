@@ -3,7 +3,7 @@ type: NSC
 fraktion: "[[Der Zirkel der Asche]]"
 ort: "[[Qaharid]]"
 beschreibung: Eine verführerische, gestaltwandelnde Pairaka-Div, die im Auftrag ihres Div-Fürsten die Fraktionen Maharevs unterwandert und gegeneinander aufhetzt.
-banner_image: Pairaka, Div.webp
+banner_image: "[[Pairaka, Div.webp]]"
 banner_offset: 10%
 ---
 

@@ -1,6 +1,6 @@
 ---
 type: NSC
-Fraktion: "[[Gnollsöldner von Blutfels]]"
+Fraktion: "[[Rubinwache von Blutfels]]"
 ort: "[[Alhuriyat Limaharif Karawansereien]]"
 beschreibung: Relikthändler und Informant der Söldner von Blutfels
 banner_image: https://dragonsford.com/realm/images/d/d4/Ratfolk.jpg

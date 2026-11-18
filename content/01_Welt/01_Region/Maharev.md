@@ -7,7 +7,7 @@ biome:
   - "[[Fluss- und Wadi-Täler]]"
   - "[[Mangroven & Brackwassersümpfe]]"
   - "[[Dünen & Sandmeer]]"
-banner_image: https://www.naturespots.net/media/k2/items/cache/9eb5fe68e2752a991d20ff91a1cdb543_L.jpg
+banner_image: https://www.naturespots.net/images/ochri/2ef007cd7edf02daad82cfb4852b8aa5-1366px.jpg
 ---
 # Regionsüberblick 
 ## Kurzbeschreibung  
@@ -26,100 +26,64 @@ Maharev liegt zwischen den Zhobergen und dem Maharev-Fluss im Westen und dem Mer
 ## Das prägende Element  
 Das prägende Element ist der **lebensspendende, aber unerforschte Dschungel**: Maharev nährt ganz Qadira, doch seine Wildnis ist voller alter Gefahren, Geheimnisse und rivalisierender Mächte. Die Region ist also zugleich Kornkammer und Grenzraum.
 
-# Komponenten
-~~~notetabs
-
----begintab
-header: Jagen
+# Komponenten der Region
 
 ```base
 filters:
   and:
-    - file.inFolder("01_Welt/02_Komponenten")
     - type == "komponente"
-    - kategorie == "jagd"
     - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
 views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Kräuter – dieser Region
+    filters:
+      and:
+        - kategorie == "kraeuterkunde"
     order:
       - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
-```
----closetab
-
----begintab
-header: Fischen
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["fischen"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Jagdbeute – dieser Region
+    filters:
+      and:
+        - kategorie == "jagd"
     order:
       - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
-```
----closetab
-
-
----begintab
-header: Materialien
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["materialkunde"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Materialien – dieser Region
+    filters:
+      and:
+        - kategorie == "materialkunde"
     order:
       - file.name
+      - merkmale
+    columns:
+      - name as Komponente
+      - biome as Biome
+    markers: number
+  - type: table
+    name: Fische – dieser Region
+    filters:
+      and:
+        - kategorie == "fischen"
+    order:
+      - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
 
 ```
----closetab
-
----begintab
-header: Kräuter
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["kraeuterkunde"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
-    order:
-      - file.name
-    columns:
-      - name as Komponente
-      - biome as Biome
-    markers: number
-```
----closetab
-
-~~~
 # Fragen
 
 ## Fragen an die Welt
@@ -164,12 +128,12 @@ Seltene Gewürzpflanzen, alte Tempelreste, versteckte Tierpfade, zerbrochene Dsc
 ## Begegnungen  
 Bauern mit Erntewagen, Forscher mit Trägern, Dschungelriesen auf Wanderung, Dschungeldrakas, Pilger der Weißen Feder, Roidira-Anhänger, Grenzsoldaten, Orkstämme aus den Bergen.
 
-## Gefahren  
+## Gefahren der Region 
 ```base
 filters:
   and:
-    - file.inFolder("01_Welt/05_Gefahren")
-    - type == "Herausforderung"
+    - file.inFolder("01_Welt/21_Gefahren")
+    - type == "Gefahr"
     - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
 views:
   - type: list

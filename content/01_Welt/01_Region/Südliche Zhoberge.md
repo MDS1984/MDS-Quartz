@@ -21,100 +21,64 @@ Der längste zusammenhängende Teil der Zhoberge liegt südlich des Paschman und
 **Winter:** Schnee, Eis, abgeschlossene Täler, isolierte Siedlungen, heiße Quellen als kostbare Zuflucht und besonders harte Reisebedingungen.
 ## Das prägende Element  
 Das prägende Element ist die **gefährliche Bergwildnis mit vulkanischem Herz**. Die Region ist kein bequemer Passraum, sondern eine Zone, in der Naturgewalt, alte Geheimnisse und soziale Randfiguren nebeneinander existieren.
-# Komponenten
-~~~notetabs
-
----begintab
-header: Jagen
+# Komponenten der Region
 
 ```base
 filters:
   and:
-    - file.inFolder("01_Welt/02_Komponenten")
     - type == "komponente"
-    - kategorie == "jagd"
     - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
 views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Kräuter – dieser Region
+    filters:
+      and:
+        - kategorie == "kraeuterkunde"
     order:
       - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
-```
----closetab
-
----begintab
-header: Fischen
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["fischen"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Jagdbeute – dieser Region
+    filters:
+      and:
+        - kategorie == "jagd"
     order:
       - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
-```
----closetab
-
-
----begintab
-header: Materialien
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["materialkunde"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Materialien – dieser Region
+    filters:
+      and:
+        - kategorie == "materialkunde"
     order:
       - file.name
+      - merkmale
+    columns:
+      - name as Komponente
+      - biome as Biome
+    markers: number
+  - type: table
+    name: Fische – dieser Region
+    filters:
+      and:
+        - kategorie == "fischen"
+    order:
+      - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
 
 ```
----closetab
-
----begintab
-header: Kräuter
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["kraeuterkunde"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
-    order:
-      - file.name
-    columns:
-      - name as Komponente
-      - biome as Biome
-    markers: number
-```
----closetab
-
-~~~
 # Fragen
 ## Fragen an die Welt
 - Warum sind die Südlichen Zhoberge so viel weniger kontrolliert als die übrigen Grenzräume?
@@ -145,12 +109,12 @@ Zerklüftete Berge, Vulkanhänge, Lavageröll, enge Pässe, Hochplateaus, Felskl
 Verlassene Schmugglerlager, alte Kultsymbole, Illusionsmarkierungen, heiße Quellen, versteckte Pfade, untergegangene Siedlungen, Drachenkrallen, Prophezeiungsteppiche, kultische Inschriften.
 ## Begegnungen  
 Mystiker, Philosophen, Astrologen, Teppichknüpfer, Schmuggler, Orks, Gnolle, Oreaden, Pyrier, Bergjäger, Vulkanpriester, Riesen, Drachen.
-## Gefahren  
+## Gefahren der Region 
 ```base
 filters:
   and:
-    - file.inFolder("01_Welt/05_Gefahren")
-    - type == "Herausforderung"
+    - file.inFolder("01_Welt/21_Gefahren")
+    - type == "Gefahr"
     - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
 views:
   - type: list

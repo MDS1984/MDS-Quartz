@@ -2,7 +2,7 @@
 type: Ort
 kategorie: Bauwerk
 beschreibung: Der Rebellion nahestehende Karawansereien in Maharev
-banner_image: Madrasas.webp
+banner_image: "[[Madrasas.webp]]"
 banner_offset: 65%
 ---
 Zentral im Distrikt der Erleuchtung in Qaharid (Hauptstadt von Maharev mit Fokus auf Bergbau und Handel) liegen drei bekannte Madrasas (Universitäten) der Region:

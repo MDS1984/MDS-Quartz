@@ -3,7 +3,7 @@ type: NSC
 Fraktion: "[[Haus al-Ghamiraz]]"
 ort: "[[Qaharid]]"
 beschreibung: Der Rebellion nahestehende Karawansereien in Maharev
-banner_image: Zekram al-Ghamiraz.webp
+banner_image: "[[Zekram al-Ghamiraz.webp]]"
 banner_offset: 10%
 ---
 

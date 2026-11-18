@@ -22,100 +22,64 @@ Die Region wird im Norden vom Ladanfluss und im Süden vom Paschman begrenzt. Si
 **Winter:** Schnee, harte Pässe, eingeschränkte Wege, Lagerfeuer, isolierte Städte und ein stärkeres Gefühl von Abgeschiedenheit.
 ## Das prägende Element  
 Das prägende Element ist die **schöne, gefährliche Hochlandgrenze**: Paschman ist ein Ort, an dem Aussicht und Absturz, Kultur und Verfall, Handel und Ruine direkt nebeneinanderliegen. Die Region inspiriert, aber sie vergisst auch nichts.
-# Komponenten
-~~~notetabs
-
----begintab
-header: Jagen
+# Komponenten der Region
 
 ```base
 filters:
   and:
-    - file.inFolder("01_Welt/02_Komponenten")
     - type == "komponente"
-    - kategorie == "jagd"
     - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
 views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Kräuter – dieser Region
+    filters:
+      and:
+        - kategorie == "kraeuterkunde"
     order:
       - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
-```
----closetab
-
----begintab
-header: Fischen
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["fischen"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Jagdbeute – dieser Region
+    filters:
+      and:
+        - kategorie == "jagd"
     order:
       - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
-```
----closetab
-
-
----begintab
-header: Materialien
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["materialkunde"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Materialien – dieser Region
+    filters:
+      and:
+        - kategorie == "materialkunde"
     order:
       - file.name
+      - merkmale
+    columns:
+      - name as Komponente
+      - biome as Biome
+    markers: number
+  - type: table
+    name: Fische – dieser Region
+    filters:
+      and:
+        - kategorie == "fischen"
+    order:
+      - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
 
 ```
----closetab
-
----begintab
-header: Kräuter
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["kraeuterkunde"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
-    order:
-      - file.name
-    columns:
-      - name as Komponente
-      - biome as Biome
-    markers: number
-```
----closetab
-
-~~~
 # Fragen
 ## Fragen an die Welt
 - Warum ist eine so schöne Region politisch und mythologisch so anfällig für Ruinen, Monster und verborgene Schrecken?
@@ -146,12 +110,12 @@ Schneegipfel, Bergwiesen, steile Hänge, Passstraßen, Oasen, trockene Hochfläc
 Zerbrochene Bronzeobjekte, alte Schmiedegeheimnisse, vergessene Karten, versteckte Pfade, Harpyiennester, verborgene Schreine, Oasenquellen, Naga-Spuren, Ruinenlager, alte Karawanenmarkierungen.
 ## Begegnungen  
 Architekten, Astrologen, Bauern, Baumeister, Handwerker, Ingenieure, Jäger, Künstler, Musiker, Rüstungsschmiede, Schriftsteller, Wahrsager, Karawanenführer, Harpyien, Duergar, Wölfe, Ogerspuren, Bergwächter.
-## Gefahren  
+## Gefahren der Region 
 ```base
 filters:
   and:
-    - file.inFolder("01_Welt/05_Gefahren")
-    - type == "Herausforderung"
+    - file.inFolder("01_Welt/21_Gefahren")
+    - type == "Gefahr"
     - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
 views:
   - type: list

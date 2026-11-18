@@ -59,7 +59,7 @@ Erstelle ein oder mehrere vergangene Verbrechen:
 > Dies kann stattdessen verwendet werden, um Psionik zu verleihen, falls das besser zu deiner Spielwelt passt. Wähle eine einzelne Bastion und nutze **Verstand** zum Wirken von Zaubern. Du kannst keine mächtigen Zauber wirken.
 > Alternativ verwende das Talent [[Psi Krieger]]
 
-![[Lauerer]]
+![[02_Regelwerk/Talente/Lauerer|Lauerer]]
 ![[Drahtzieher]]
 > [!tip]+
 > Dies kann viele Arten von Vorbereitung abdecken. Berücksichtige dabei auch deine anderen Talente und Fähigkeiten. Falls du beispielsweise Zauber wirken kannst, hast du dich vielleicht im Voraus durch Magie auf die Situation vorbereitet.

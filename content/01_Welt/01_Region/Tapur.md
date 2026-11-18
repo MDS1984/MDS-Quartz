@@ -19,100 +19,64 @@ Tapur trennt die Ketzwüste von den Ebenen westlich der Zhoberge. Im Osten liegt
 **Winter:** Trockenere Luft im Norden, feuchtere Kühle im Süden, weniger Reiseverkehr, bessere Sicht auf Pfade und Grenzspuren.
 ## Das prägende Element  
 Das prägende Element ist die **langsame Verschiebung von Wald zu Wüste**. Tapur ist ein Gebiet, das nicht nur zwischen Landschaftstypen liegt, sondern auch zwischen Kultur, Politik und dem Einfluss der vorrückenden Ketzwüste.
-# Komponenten
-~~~notetabs
-
----begintab
-header: Jagen
+# Komponenten der Region
 
 ```base
 filters:
   and:
-    - file.inFolder("01_Welt/02_Komponenten")
     - type == "komponente"
-    - kategorie == "jagd"
     - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
 views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Kräuter – dieser Region
+    filters:
+      and:
+        - kategorie == "kraeuterkunde"
     order:
       - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
-```
----closetab
-
----begintab
-header: Fischen
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["fischen"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Jagdbeute – dieser Region
+    filters:
+      and:
+        - kategorie == "jagd"
     order:
       - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
-```
----closetab
-
-
----begintab
-header: Materialien
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["materialkunde"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Materialien – dieser Region
+    filters:
+      and:
+        - kategorie == "materialkunde"
     order:
       - file.name
+      - merkmale
+    columns:
+      - name as Komponente
+      - biome as Biome
+    markers: number
+  - type: table
+    name: Fische – dieser Region
+    filters:
+      and:
+        - kategorie == "fischen"
+    order:
+      - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
 
 ```
----closetab
-
----begintab
-header: Kräuter
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["kraeuterkunde"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
-    order:
-      - file.name
-    columns:
-      - name as Komponente
-      - biome as Biome
-    markers: number
-```
----closetab
-
-~~~
 # Fragen
 ## Fragen an die Welt
 - Warum breitet sich die Ketzwüste aus, und wer profitiert davon oder leidet darunter?
@@ -139,12 +103,12 @@ Dichter Wald, trockener Nordwald, Savannenrand, Sümpfe, Lichtungen, Holzfäller
 Verlassene Lager, befreite Sklaven, alte Holzmarken, geheime Pfade, giftige Pflanzen, Färberpflanzen, Tierfährten, Spuren von Sandstürmen, verdeckte Beobachtungsposten.
 ## Begegnungen  
 Färber, Holzfäller, Kräuterkundler, Kürschner, Möbelschreiner, Späher, Spione, Drakas, Feenwesen, Grüne Drachen, Leoparden, Parde, Spriggane.
-## Gefahren  
+## Gefahren der Region 
 ```base
 filters:
   and:
-    - file.inFolder("01_Welt/05_Gefahren")
-    - type == "Herausforderung"
+    - file.inFolder("01_Welt/21_Gefahren")
+    - type == "Gefahr"
     - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
 views:
   - type: list

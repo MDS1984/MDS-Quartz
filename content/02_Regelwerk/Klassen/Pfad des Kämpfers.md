@@ -46,6 +46,6 @@ Du musst kein Waffenexperte sein – lehne dich in das Filmreife hinein. Schon e
 ![[Rückendeckung]]
 ![[Bedachte Worte]]
 ![[Schnelle Erholung]]
-![[Taktiker]]
+![[02_Regelwerk/Talente/Taktiker|Taktiker]]
 > [!tip]+
 > Szenenelemente können aus den Beschreibungen der SL stammen oder einfach Dinge sein, die logisch vorhanden wären. Etabliere bei Bedarf passende Details; die SL greift ein, falls du es zu weit treibst.

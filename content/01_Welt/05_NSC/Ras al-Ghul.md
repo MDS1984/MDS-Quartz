@@ -3,7 +3,7 @@ type: NSC
 fraktion: "[[Kinder der Oase]]"
 ort: "[[Merazwüste]]"
 beschreibung: Ein schlanker, nachtaktiver Sandläufer der Zephyrsippe und Kundschafter der Kinder der Oase.
-banner_image: ras al-Ghul.webp
+banner_image: "[[ras al-Ghul.webp]]"
 banner_offset: 10%
 ---
 # Erscheinung & Auftreten

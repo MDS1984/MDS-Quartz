@@ -1,5 +1,5 @@
 views:
-  - type: table
+  - type: cards
     name: Tabelle
     filters:
       and:
@@ -7,3 +7,4 @@ views:
     order:
       - file.name
       - biome
+    image: note.banner_image

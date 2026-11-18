@@ -4,7 +4,7 @@
 		{"id":"ea6b3b72965dbcf5","type":"text","text":"[[Haus al-Ghamiraz]]","x":95,"y":-185,"width":250,"height":60},
 		{"id":"2d5b4938263eebb4","type":"text","text":"[[Kinder der Oase]]","x":-95,"y":-45,"width":250,"height":60},
 		{"id":"22dbd692151af890","type":"text","text":"[[Der Zirkel der Asche]]","x":95,"y":95,"width":250,"height":60},
-		{"id":"10c85cc019d01326","type":"text","text":"[[Gnollsöldner von Blutfels]]","x":-345,"y":125,"width":250,"height":60}
+		{"id":"10c85cc019d01326","type":"text","text":"[[Rubinwache von Blutfels]]","x":-345,"y":125,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"e04de7d3cfb74cac","fromNode":"1f72f56a2bc304e0","fromSide":"right","toNode":"ea6b3b72965dbcf5","toSide":"left","fromEnd":"arrow","color":"1","label":"Feinde"},

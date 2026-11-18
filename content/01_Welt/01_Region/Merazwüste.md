@@ -28,100 +28,64 @@ Die Merazwüste liegt im südlichen Qadira und markiert die große Trennlinie zu
 ## Das prägende Element  
 Das prägende Element ist die **verwandelte Landschaft der Erinnerung**: eine Wüste, die einst Leben trug und nun nur noch als Grab der Vergangenheit existiert. Jede Oase, jedes Bauwerk und jede Karawanenroute steht im Schatten dieser verlorenen Fruchtbarkeit.
 
-# Komponenten
-~~~notetabs
-
----begintab
-header: Jagen
+# Komponenten der Region
 
 ```base
 filters:
   and:
-    - file.inFolder("01_Welt/02_Komponenten")
     - type == "komponente"
-    - kategorie == "jagd"
     - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
 views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Kräuter – dieser Region
+    filters:
+      and:
+        - kategorie == "kraeuterkunde"
     order:
       - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
-```
----closetab
-
----begintab
-header: Fischen
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["fischen"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Jagdbeute – dieser Region
+    filters:
+      and:
+        - kategorie == "jagd"
     order:
       - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
-```
----closetab
-
-
----begintab
-header: Materialien
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["materialkunde"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
+  - type: table
+    name: Materialien – dieser Region
+    filters:
+      and:
+        - kategorie == "materialkunde"
     order:
       - file.name
+      - merkmale
+    columns:
+      - name as Komponente
+      - biome as Biome
+    markers: number
+  - type: table
+    name: Fische – dieser Region
+    filters:
+      and:
+        - kategorie == "fischen"
+    order:
+      - file.name
+      - merkmale
     columns:
       - name as Komponente
       - biome as Biome
     markers: number
 
 ```
----closetab
-
----begintab
-header: Kräuter
-
-```base
-filters:
-  and:
-    - file.inFolder("01_Welt/02_Komponenten")
-    - type == "komponente"
-    - kategorie == ["kraeuterkunde"]
-    - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
-views:
-  - type: list
-    name: Jagen – alle Biome dieser Region
-    order:
-      - file.name
-    columns:
-      - name as Komponente
-      - biome as Biome
-    markers: number
-```
----closetab
-
-~~~
 # Fragen
 
 ## Fragen an die Welt
@@ -183,12 +147,12 @@ Vergrabene Ruinen, alte Wasserkanäle, Knochenstatuen, Pferdespuren, versiegelte
 ## Begegnungen  
 Archäologen, Eremiten, Hirten, Kirchenbeamte, Krieger, Pferdezüchter, Räuber, Wüstendruiden, Elementargeistartige, Wüstenriesen, Schedus, Girtablilus, Schakale, Sphingen.
 
-## Gefahren  
+## Gefahren der Region 
 ```base
 filters:
   and:
-    - file.inFolder("01_Welt/05_Gefahren")
-    - type == "Herausforderung"
+    - file.inFolder("01_Welt/21_Gefahren")
+    - type == "Gefahr"
     - "list(biome).filter(list(this.biome).contains(value)).length > 0 "
 views:
   - type: list

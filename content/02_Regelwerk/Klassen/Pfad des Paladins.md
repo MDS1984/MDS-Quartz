@@ -37,7 +37,7 @@ Die **Sühne** für verletzte Grundsätze erfordert große Taten. Die Tat muss d
 ![[Herausforderung]]
 ![[Unerschrocken]]
 ![[Göttlicher Segen]]
-![[Wächter]]
+![[02_Regelwerk/Talente/Wächter|Wächter]]
 > [!tip]+
 > Wenn du „einen Verteidigungswurf für einen Verbündeten“ machst, unterstützt du ihn nicht einfach. Stattdessen richtet sich der Einflusszug nun gegen dich, und dein Verbündeter ist nicht länger in Gefahr.
 

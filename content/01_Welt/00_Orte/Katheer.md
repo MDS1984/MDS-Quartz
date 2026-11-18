@@ -3,7 +3,7 @@ type: Ort
 kategorie:
   - Siedlung
 beschreibung: Hauptstadt von Qadira
-banner_image: Katheer.webp
+banner_image: "[[Katheer.webp]]"
 banner_offset: center
 ---
 # Kurzbeschreibung  
