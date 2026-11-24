@@ -1,8 +1,9 @@
 ---
 type: Ort
-kategorie: Siedlung
+kategorie: 
+  - Siedlung
 beschreibung: Gewaltige Höhlenstadt der Surakah in den Gezeitenklippen der Merazküste
-banner_image: Iset.webp
+banner_image: "[[Iset.webp]]"
 banner_offset: 45%
 ---
 **Iset** ist die größte und älteste bekannte Stadt der [[Die Surakah|Surakah]]. Die Stadt liegt verborgen innerhalb gewaltiger Steilklippen an der Küste von Meraz, wo Meer, Wind und Gezeiten über Jahrtausende ein Labyrinth aus Höhlen, Grotten und unterirdischen Wasserwegen geschaffen haben. Von See aus sind bei Ebbe zahllose dunkle Öffnungen in den Felswänden zu erkennen, doch nur wenige führen tatsächlich in die Stadt.

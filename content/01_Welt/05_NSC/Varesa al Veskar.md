@@ -3,7 +3,7 @@ type: NSC
 fraktion: Wechselnd
 ort: "[[Qaharid]]"
 beschreibung: Eine rastlose gnomische Händlerin, die überall Geschäfte wittert und sich aus Neugier in Angelegenheiten einmischt, die sie nichts angehen.
-banner_image: Varesa.webp
+banner_image: "[[Varesa.webp]]"
 banner_offset: 25%
 ---
 ## Erscheinung & Auftreten
