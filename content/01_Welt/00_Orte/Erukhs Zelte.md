@@ -2,7 +2,7 @@
 type: Ort
 kategorie: Siedlung
 beschreibung: Wundersames Zeltlager eines verbannten Dschinns, über dem weit transportierte Flussnebel als Regen niedergehen
-banner_image: erukhs Zelte.webp
+banner_image: Erukhs Zelte.webp
 banner_offset: 30%
 ---
 Ein wundersames Zeltlager inmitten einer lebensfeindlichen Salzwüste, errichtet um den gewaltigen, seidenverhangenen Pavillon des verbannten Dschinnmagiers [[Erukh]]. Unmöglich schöne Gestalten wandeln zwischen den farbenprächtigen Zelten, während in der flirrenden Hitze leise Musik erklingt, deren Ursprung kein Besucher zu finden vermag. Wer Erukhs Gunst sucht, kann sie weder mit Gold noch mit Geschenken erwerben. Stattdessen stellt der Dschinn jedem Bittsteller eine Aufgabe, und nur wer sie erfüllt, darf tiefer in die Zelte vordringen, wo noch größere Wunder verborgen sein sollen.
