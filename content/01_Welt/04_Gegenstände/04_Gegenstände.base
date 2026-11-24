@@ -8,4 +8,4 @@ views:
       - file.name
       - beschreibung
     columnSize:
-      file.name: 194
+      file.name: 260

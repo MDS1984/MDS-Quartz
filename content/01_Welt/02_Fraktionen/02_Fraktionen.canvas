@@ -4,7 +4,10 @@
 		{"id":"ea6b3b72965dbcf5","type":"text","text":"[[Haus al-Ghamiraz]]","x":95,"y":-185,"width":250,"height":60},
 		{"id":"2d5b4938263eebb4","type":"text","text":"[[Kinder der Oase]]","x":-95,"y":-45,"width":250,"height":60},
 		{"id":"22dbd692151af890","type":"text","text":"[[Der Zirkel der Asche]]","x":95,"y":95,"width":250,"height":60},
-		{"id":"10c85cc019d01326","type":"text","text":"[[Rubinwache von Blutfels]]","x":-345,"y":125,"width":250,"height":60}
+		{"id":"10c85cc019d01326","type":"text","text":"[[Rubinwache von Blutfels]]","x":-345,"y":125,"width":250,"height":60},
+		{"id":"a67aaed4b75e6894","type":"text","text":"[[Die Surakah]]","x":345,"y":260,"width":160,"height":60},
+		{"id":"53df6122569c138a","type":"text","text":"[[Ipu Serket - Die Kinder des Stachels]]","x":-345,"y":420,"width":250,"height":60},
+		{"id":"b1871a000addea91","x":600,"y":95,"width":250,"height":60,"type":"text","text":"[[Die Letzte Legende]]"}
 	],
 	"edges":[
 		{"id":"e04de7d3cfb74cac","fromNode":"1f72f56a2bc304e0","fromSide":"right","toNode":"ea6b3b72965dbcf5","toSide":"left","fromEnd":"arrow","color":"1","label":"Feinde"},
@@ -16,6 +19,9 @@
 		{"id":"944e78c1f97315e2","fromNode":"2d5b4938263eebb4","fromSide":"top","toNode":"ea6b3b72965dbcf5","toSide":"bottom","color":"3","label":"Neutral-"},
 		{"id":"b5c718117999de0e","fromNode":"2d5b4938263eebb4","fromSide":"bottom","toNode":"22dbd692151af890","toSide":"left","fromEnd":"arrow","color":"1","label":"Feinde"},
 		{"id":"0497d5385f7fe605","fromNode":"10c85cc019d01326","fromSide":"right","toNode":"2d5b4938263eebb4","toSide":"left","fromEnd":"arrow","color":"3","label":"Neutral"},
-		{"id":"b13371cc67c5dd5f","fromNode":"22dbd692151af890","fromSide":"bottom","toNode":"10c85cc019d01326","toSide":"bottom","color":"4","label":"Nutzt aus"}
+		{"id":"b13371cc67c5dd5f","fromNode":"22dbd692151af890","fromSide":"bottom","toNode":"10c85cc019d01326","toSide":"bottom","color":"4","label":"Nutzt aus"},
+		{"id":"de738d23c427f95a","fromNode":"a67aaed4b75e6894","fromSide":"left","toNode":"22dbd692151af890","toSide":"bottom","fromEnd":"arrow","color":"1","label":"Feinde"},
+		{"id":"c1aab1f46c8d8154","fromNode":"a67aaed4b75e6894","fromSide":"bottom","toNode":"53df6122569c138a","toSide":"right","color":"3","label":"Wachsende Spannungen"},
+		{"id":"d17daf29bc5e901c","fromNode":"53df6122569c138a","fromSide":"left","toNode":"1f72f56a2bc304e0","toSide":"left","fromEnd":"arrow","color":"3","label":"Alternativen?"}
 	]
 }

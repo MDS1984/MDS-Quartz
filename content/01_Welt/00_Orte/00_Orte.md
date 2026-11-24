@@ -1,1 +1,4 @@
+---
+title: Orte
+---
 ![[Orte.base]]

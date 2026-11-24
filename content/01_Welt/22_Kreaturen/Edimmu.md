@@ -12,7 +12,7 @@ biome:
   - "[[Verlassene Ruinen & Steinwüsten]]"
 bild: "[[Edimmu.webp]]"
 ---
-![[Edimmu.webp|390x308]]
+![[Edimmu.webp|358x308]]
 # Edimmu
 **Untoter** _4W Elite Trickser (Einzeln)_
 
